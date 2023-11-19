@@ -156,10 +156,10 @@
             label = "Mac OS";
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
             bindings = <
-&kp GRAVE  &kp Q  &kp W     &kp E      &kp R  &kp T                        &kp Y  &kp U  &kp I      &kp O    &kp P     &none
-&kp TAB    &kp A  &kp S     &kp D      &kp F  &kp G                        &kp H  &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&none      &kp Z  &kp X     &kp C      &kp V  &kp B  &kp F16    &kp F17    &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &none
-                  &kp LALT  &kp LCTRL  &none  &none  &kp ENTER  &kp SPACE  &none  &none  &kp RCTRL  &kp DEL
+&gqt LS(TAB) TAB  &kp Q  &gqt LS(LA(LC(LG(D)))) D  &gqt LS(LA(LC(LG(R)))) R  &gqt LS(LA(LC(LG(W)))) W  &gqt PIPE B                      &kp J  &kp F          &kp U      &kp P    &kp SEMI  &kp ESC
+&kp BSPC          &kp A  &kp S                     &kp H                     &kp T                     &kp G                            &kp Y  &kp N          &kp E      &kp O    &kp I     &kp SQT
+&kp LSHFT         &kp Z  &kp X                     &kp M                     &kp C                     &kp V        &kp F16    &kp F17  &kp K  &kp L          &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
+                         &none                     &kp LCTRL                 &kp RALT                  &kp LGUI     &kp SPACE  &kp RET  &none  &kp LS(TILDE)  &kp GRAVE  &none
             >;
         };
 
