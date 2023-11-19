@@ -22,16 +22,6 @@
 / {
     conditional_layers {
         compatible = "zmk,conditional-layers";
-
-        win_fkeys {
-            if-layers = <WINDOWS FKEYS>;
-            then-layer = <W_FKEYS>;
-        };
-
-        win_numbers {
-            if-layers = <WINDOWS NUMBERS>;
-            then-layer = <W_NUMBERS>;
-        };
     };
 
     behaviors {
@@ -48,7 +38,6 @@
     };
 
     macros {
-
         pal: pal {
             label = "Pallette";
             compatible = "zmk,behavior-macro";
