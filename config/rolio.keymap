@@ -156,10 +156,10 @@
             label = "Mac OS";
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
             bindings = <
-&gqt LS(TAB) TAB  &kp Q  &gqt LS(LA(LC(LG(D)))) D  &gqt LS(LA(LC(LG(R)))) R  &gqt LS(LA(LC(LG(W)))) W  &gqt PIPE B                      &kp J  &kp F          &kp U      &kp P    &kp SEMI  &kp ESC
-&kp BSPC          &kp A  &kp S                     &kp H                     &kp T                     &kp G                            &kp Y  &kp N          &kp E      &kp O    &kp I     &kp SQT
-&kp LSHFT         &kp Z  &kp X                     &kp M                     &kp C                     &kp V        &kp F16    &kp F17  &kp K  &kp L          &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
-                         &none                     &kp LCTRL                 &kp RALT                  &kp LGUI     &kp SPACE  &kp RET  &none  &kp LS(TILDE)  &kp GRAVE  &none
+&gqt LS(TAB) TAB       &kp Q            &gqt LS(LA(LC(LG(D)))) D  &gqt LS(LA(LC(LG(R)))) R  &gqt LS(LA(LC(LG(W)))) W  &gqt PIPE B                      &gqt BACKSLASH J  &gqt EQUAL F   &gqt MINUS U  &gqt PLUS P  &gqt COLON SEMICOLON  &kp ESC
+&gqt DELETE BACKSPACE  &gqt NUMBER_1 A  &kp S                     &kp H                     &kp T                     &kp G                            &kp Y             &kp N          &kp E         &kp O        &kp I                 &kp SQT
+&kp LSHFT              &kp Z            &kp X                     &kp M                     &kp C                     &kp V        &kp F16    &kp F17  &kp K             &kp L          &kp COMMA     &kp DOT      &kp FSLH              &kp RCTRL
+                                        &none                     &kp LCTRL                 &kp RALT                  &kp LGUI     &kp SPACE  &kp RET  &none             &kp LS(TILDE)  &kp GRAVE     &none
             >;
         };
 
