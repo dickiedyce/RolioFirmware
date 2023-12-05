@@ -147,6 +147,55 @@
         };
     };
 
+    macros {
+        Dda: Dda {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp D &kp A &kp SPACE>;
+            label = "DDA";
+        };
+
+        pw_1: pw_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp P &kp W &kp UNDER &kp N1>;
+            label = "PW_1";
+        };
+
+        pw_2: pw_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp P &kp W &kp UNDER &kp N2>;
+            label = "PW_2";
+        };
+
+        pw_3: pw_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp P &kp W &kp UNDER &kp N3>;
+            label = "PW_3";
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        Copy {
+            bindings = <&kp LG(C)>;
+            key-positions = <14 15>;
+        };
+
+        Paste {
+            bindings = <&kp LG(V)>;
+            key-positions = <15 16>;
+        };
+
+        Cut {
+            bindings = <&kp LG(X)>;
+            key-positions = <13 14>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -169,10 +218,10 @@
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                           &trans  &bt BT_CLR  &bl BL_DEC  &bl BL_TOG  &bl BL_INC  &trans
-&trans      &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                 &trans  &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
-&trans      &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F16      &kp F17   &trans  &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
-                          &trans        &trans        &trans        &none         &trans       &trans      &trans  &trans      &trans      &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                         &bl BL_DEC  &Dda        &pw_1       &pw_2       &pw_3       &trans
+&trans      &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                               &bl BL_TOG  &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
+&trans      &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F16      &kp F17   &bl BL_INC  &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
+                          &trans        &trans        &trans        &none         &trans       &trans    &trans      &trans      &trans      &trans
             >;
         };
     };
