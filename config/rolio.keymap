@@ -146,9 +146,7 @@
                 <&macro_release>,
                 <&kp LCTRL>;
         };
-    };
 
-    macros {
         Dda: Dda {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
