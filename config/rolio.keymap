@@ -218,10 +218,10 @@
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                         &bl BL_DEC  &Dda        &pw_1       &pw_2       &pw_3       &trans
-&trans      &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                               &bl BL_TOG  &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
-&trans      &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F16      &kp F17   &bl BL_INC  &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
-                          &trans        &trans        &trans        &none         &trans       &trans    &trans      &trans      &trans      &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                           &trans  &bt BT_CLR  &bl BL_DEC  &bl BL_TOG  &bl BL_INC  &trans
+&trans      &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                 &trans  &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
+&trans      &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F16      &kp F17   &trans  &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
+                          &trans        &trans        &trans        &none         &trans       &trans      &trans  &trans      &trans      &trans
             >;
         };
     };
