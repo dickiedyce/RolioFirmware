@@ -27,6 +27,7 @@
         };
 
         //Mac OS Zoom
+
         mac_zoom: mac_zoom {
             compatible = "zmk,behavior-sensor-rotate";
             label = "MAC_ZOOM";
@@ -206,22 +207,21 @@
                 <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
 
             bindings = <
-&gqt LS(TAB) TAB  &kp Q        &gqt LS(LA(LC(LG(D)))) D  &gqt LS(LA(LC(LG(R)))) R  &gqt LS(LA(LC(LG(W)))) W  &gqt PIPE B                                         &gqt BSLH J  &gqt EQUAL F   &gqt MINUS U         &gqt PLUS P  &gqt COLON SEMI  &kp ESC
-&kp BSPC          &gqt N1 A    &gqt N2 S                 &gqt N3 H                 &gqt N4 T                 &gqt N5 G                                           &gqt N6 Y    &gqt N7 N            &gqt N8 E      &gqt N9 O    &gqt N0 I        &gqt GRAVE SQT
-&kp LSHFT         &gqt LBKT Z  &gqt RBKT X               &gqt LPAR M               &gqt RPAR C               &gqt LC(LA(LG(LS(N)))) V   &reset_zoom  &kp C_MUTE  &gqt LBRC K  &gqt RBRC L          &gqt LT COMMA  &gqt GT DOT  &gqt QMARK FSLH  &kp RCTRL
-                               &none                     &none                     &kp RALT                  &kp LGUI                  &lt 1 SPACE  &kp RET  &mo 1        &gqt LG(SEMI) TILDE  &none          &none
+&gqt LS(TAB) TAB  &kp Q        &gqt LS(LA(LC(LG(D)))) D  &gqt LS(LA(LC(LG(R)))) R  &gqt LS(LA(LC(LG(W)))) W  &gqt PIPE B                                        &gqt BSLH J  &gqt EQUAL F         &gqt MINUS U   &gqt PLUS P  &gqt COLON SEMI  &kp ESC
+&kp BSPC          &gqt N1 A    &gqt N2 S                 &gqt N3 H                 &gqt N4 T                 &gqt N5 G                                          &gqt N6 Y    &gqt N7 N            &gqt N8 E      &gqt N9 O    &gqt N0 I        &gqt GRAVE SQT
+&kp LSHFT         &gqt LBKT Z  &gqt RBKT X               &gqt LPAR M               &gqt RPAR C               &gqt LC(LA(LG(LS(N)))) V  &reset_zoom  &kp C_MUTE  &gqt LBRC K  &gqt RBRC L          &gqt LT COMMA  &gqt GT DOT  &gqt QMARK FSLH  &kp RCTRL
+                               &none                     &none                     &kp RALT                  &kp LGUI                  &lt 1 SPACE  &kp RET     &mo 1        &gqt LG(SEMI) TILDE  &none          &none
             >;
         };
 
         settings_layer {
             label = "Settings";
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
-
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                           &trans  &bt BT_CLR  &bl BL_DEC  &bl BL_TOG  &bl BL_INC  &trans
-&trans      &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                 &trans  &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
-&trans      &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F16      &kp F17   &trans  &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
-                          &trans        &trans        &trans        &none         &trans       &trans      &trans  &trans      &trans      &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans  &Dda      &pw_1      &pw_2      &pw_3      &bl BL_INC
+&trans      &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                          &trans  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &bl BL_TOG
+&trans      &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F16  &kp F17  &trans  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &bl BL_DEC
+                          &trans        &trans        &trans        &none         &trans   &trans   &trans  &trans    &trans     &trans
             >;
         };
     };
