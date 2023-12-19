@@ -214,10 +214,21 @@
 //                 |             |                          |                          |                          |                          +-------------+------------+             |                     |               |                 |                 |                // 
   &kp LSHFT          &gqt LBKT Z   &gqt RBKT X                &gqt LPAR M                &gqt RPAR C                &gqt LC(LA(LG(LS(N)))) V   &reset_zoom   &kp C_MUTE   &gqt LBRC K   &gqt RBRC L           &gqt LT COMMA   &gqt GT DOT       &gqt QMARK FSLH   &kp RCTRL
 //-------------------------------+                          |                          |                          |                          |             |            |             |                     |               |                 +----------------------------------// 
-                                   &none                      &none                      &kp RALT                   &kp LGUI                   &lt 1 SPACE   &kp RET      &mo 1         &gqt LG(SEMI) TILDE   &none           &kp LA(LC(DEL))
+                                   &tog 1                     &none                      &kp RALT                   &kp LGUI                   &lt 2 SPACE   &kp RET      &mo 1         &gqt LG(SEMI) TILDE   &none           &kp LA(LC(DEL))
 //                               |                          |                          |                          |                          |             |            |             |                     |               |                 |                                  // 
 //                               +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+                                  // 
             >;
+        };
+
+        windows {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &gqt PIPE2 B                  &gqt NON_US_BACKSLASH J  &trans      &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                        &trans                   &trans      &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans                   &trans      &trans  &trans  &trans  &kp RGUI
+                &trans  &trans  &trans  &kp LCTRL     &trans  &trans  &trans                   &kp TILDE2  &trans  &trans
+            >;
+
+            label = "Windows";
         };
 
         settings_layer {
