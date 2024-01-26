@@ -179,20 +179,21 @@
     combos {
         compatible = "zmk,combos";
 
+        Cut {
+            bindings = <&kp LG(X)>;
+            key-positions = <25 26>;
+        };
+
         Copy {
             bindings = <&kp LG(C)>;
-            key-positions = <14 15>;
+            key-positions = <26 27>;
         };
 
         Paste {
             bindings = <&kp LG(V)>;
-            key-positions = <15 16>;
+            key-positions = <27 28>;
         };
-
-        Cut {
-            bindings = <&kp LG(X)>;
-            key-positions = <13 14>;
-        };
+        
     };
 
     keymap {
