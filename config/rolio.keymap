@@ -208,15 +208,15 @@
             bindings = <
 
 //-------------------------------------------------------------------------------------------------------------------------------------------+                          +--------------------------------------------------------------------------------------------------------//
-//                 |             |                          |                          |                          |                          |                          |             |                     |               |                 |                 |                // 
-  &gqt LS(TAB) TAB   &kp Q         &gqt LS(LA(LC(LG(D)))) D   &gqt LS(LA(LC(LG(R)))) R   &gqt LS(LA(LC(LG(W)))) W   &gqt PIPE B                                           &gqt BSLH J   &gqt EQUAL F          &gqt MINUS U    &gqt PLUS P       &gqt COLON SEMI   &kp ESC
-//                 |             |                          |                          |                          |                          |                          |             |                     |               |                 |                 |                // 
-  &gqt DEL BSPC      &gqt N1 A     &gqt N2 S                  &gqt N3 H                  &gqt N4 T                  &gqt N5 G                                             &gqt N6 Y     &gqt N7 N             &gqt N8 E       &gqt N9 O         &gqt N0 I         &gqt GRAVE SQT
-//                 |             |                          |                          |                          |                          +-------------+------------+             |                     |               |                 |                 |                // 
-  &kp LSHFT          &gqt LBKT Z   &gqt RBKT X                &gqt LPAR M                &gqt RPAR C                &gqt LC(LA(LG(LS(N)))) V   &reset_zoom   &kp C_MUTE   &gqt LBRC K   &gqt RBRC L           &gqt LT COMMA   &gqt GT DOT       &gqt QMARK FSLH   &kp RCTRL
-//-------------------------------+                          |                          |                          |                          |             |            |             |                     |               |                 +----------------------------------// 
-                                   &tog 1                     &kp LS(LA(LC(LG(A))))      &kp RALT                   &kp LGUI                   &lt 2 SPACE   &kp RET      &mo 2         &gqt LG(SEMI) TILDE   &none           &kp LA(LC(DEL))
-//                               |                          |                          |                          |                          |             |            |             |                     |               |                 |                                  // 
+//                 |             |                          |                          |                          |                          |                          |             |                     |                 |                 |                 |                // 
+  &gqt LS(TAB) TAB   &kp Q         &gqt LS(LA(LC(LG(D)))) D   &gqt LS(LA(LC(LG(R)))) R   &gqt LS(LA(LC(LG(W)))) W   &gqt PIPE B                                           &gqt BSLH J   &gqt EQUAL F          &gqt MINUS U      &gqt PLUS P       &gqt COLON SEMI   &kp ESC
+//                 |             |                          |                          |                          |                          |                          |             |                     |                 |                 |                 |                // 
+  &gqt DEL BSPC      &gqt N1 A     &gqt N2 S                  &gqt N3 H                  &gqt N4 T                  &gqt N5 G                                             &gqt N6 Y     &gqt N7 N             &gqt N8 E         &gqt N9 O         &gqt N0 I         &gqt GRAVE SQT
+//                 |             |                          |                          |                          |                          +-------------+------------+             |                     |                 |                 |                 |                // 
+  &kp LSHFT          &gqt LBKT Z   &gqt RBKT X                &gqt LPAR M                &gqt RPAR C                &gqt LC(LA(LG(LS(N)))) V   &reset_zoom   &kp C_MUTE   &gqt LBRC K   &gqt RBRC L           &gqt LT COMMA     &gqt GT DOT       &gqt QMARK FSLH   &kp RCTRL
+//-------------------------------+                          |                          |                          |                          |             |            |             |                     |                 |                 +----------------------------------// 
+                                   &tog 1                     &kp LS(LA(LC(LG(A))))      &kp RALT                   &kp LGUI                   &lt 2 SPACE   &kp RET      &mo 2         &gqt LG(SEMI) TILDE   &kp LA(SPACE)     &kp LC(H)     
+//                               |                          |                          |                          |                          |             |            |             |                     |                 |                 |                                  // 
 //                               +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+                                  // 
             >;
         };
@@ -226,7 +226,7 @@
 &trans  &trans  &trans  &trans  &trans  &gqt PIPE2 B                  &gqt NON_US_BACKSLASH J  &trans      &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                        &trans                   &trans      &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans                   &trans      &trans  &trans  &trans  &kp RGUI
-                &trans  &trans  &trans  &kp LCTRL     &trans  &trans  &trans                   &kp TILDE2  &trans  &trans
+                &trans  &trans  &trans  &kp LCTRL     &trans  &trans  &trans                   &kp TILDE2  &trans  &kp LA(LC(DEL))
             >;
 
             label = "Windows";
