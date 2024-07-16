@@ -201,8 +201,7 @@
 
         default_layer {
             label = "Mac OS";
-            sensor-bindings =
-                <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP &mac_zoom>;
+            sensor-bindings = <&mac_zoom &inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP >;
 
             bindings = <
 
@@ -212,7 +211,7 @@
 //                 |             |                          |                          |                          |                          |                          |             |                     |                 |                 |                 |                // 
   &gqt DEL BSPC      &gqt N1 A     &gqt N2 S                  &gqt N3 H                  &gqt N4 T                  &gqt N5 G                                             &gqt N6 Y     &gqt N7 N             &gqt N8 E         &gqt N9 O         &gqt N0 I         &gqt GRAVE SQT
 //                 |             |                          |                          |                          |                          +-------------+------------+             |                     |                 |                 |                 |                // 
-  &kp LSHFT          &gqt LBKT Z   &gqt RBKT X                &gqt LPAR M                &gqt RPAR C                &gqt LC(LA(LG(LS(N)))) V   &kp C_MUTE    &reset_zoom  &gqt LBRC K   &gqt RBRC L           &gqt LT COMMA     &gqt GT DOT       &gqt QMARK FSLH   &kp RCTRL
+  &kp LSHFT          &gqt LBKT Z   &gqt RBKT X                &gqt LPAR M                &gqt RPAR C                &gqt LC(LA(LG(LS(N)))) V   &reset_zoom   &kp C_MUTE   &gqt LBRC K   &gqt RBRC L           &gqt LT COMMA     &gqt GT DOT       &gqt QMARK FSLH   &kp RCTRL
 //-------------------------------+                          |                          |                          |                          |             |            |             |                     |                 |                 +----------------------------------// 
                                    &tog 1                     &kp LS(LA(LC(LG(A))))      &kp RALT                   &kp LGUI                   &lt 2 SPACE   &kp RET      &mo 2         &gqt LG(SEMI) TILDE   &kp LA(SPACE)     &kp LC(H)     
 //                               |                          |                          |                          |                          |             |            |             |                     |                 |                 |                                  // 
@@ -233,14 +232,14 @@
 
         settings_layer {
             label = "Settings";
-            sensor-bindings = <&mac_zoom &inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP >;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP &mac_zoom>;
             bindings = <
 //---------------------------------------------------------------------------------------+                         +--------------------------------------------------------------------//
    &bt BT_CLR   &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                             &trans   &Dda       &pw_1       &pw_2       &pw_3       &bl BL_INC
 //            |              |              |              |              |              |                         |        |          |           |           |           |            //
    &trans       &kp F1         &kp F2         &kp F3         &kp F4         &kp F5                                   &trans   &kp LEFT   &kp DOWN    &kp UP      &kp RIGHT   &bl BL_TOG
 //                           |              |              |              |              |            |            |        |          |           |           |           |            //
-   &trans       &kp F6         &kp F7         &kp F8         &kp F9         &kp F10        &reset_zoom  &kp C_MUTE   &trans   &kp HOME   &kp PG_DN   &kp PG_UP   &kp END     &bl BL_DEC
+   &trans       &kp F6         &kp F7         &kp F8         &kp F9         &kp F10        &kp C_MUTE  &reset_zoom  &trans   &kp HOME   &kp PG_DN   &kp PG_UP   &kp END     &bl BL_DEC
 //---------------------------+              |              |              |              |            |            |        |          |           |           +------------------------//
                                &trans         &trans         &trans         &none          &trans       &trans       &trans   &trans     &trans      &trans
 //                           |              |              |              |              |            |            |        |          |           |           |                        //
