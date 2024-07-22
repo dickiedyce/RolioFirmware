@@ -201,7 +201,7 @@
 
         default_layer {
             label = "Mac OS";
-            sensor-bindings = <&mac_zoom &inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP >;
+            sensor-bindings = <&mac_zoom &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN >;
 
             bindings = <
 
@@ -232,7 +232,7 @@
 
         settings_layer {
             label = "Settings";
-            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP &mac_zoom>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &mac_zoom>;
             bindings = <
 //---------------------------------------------------------------------------------------+                         +--------------------------------------------------------------------//
    &bt BT_CLR   &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                             &trans   &Dda       &pw_1       &pw_2       &pw_3       &bl BL_INC
